@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shopping</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="site-contaner">
+
+
+    <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+      <div style="font-size: 50px;" class="wrap"></div>
+      <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero">
+                <h1><span>S</span><span>E</span>LVAN</h1>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger">
+    
+                <div class="bar"></div>
+              </div>
+              <ul>
+                <li><a href="#hero" data-after="Home">Home</a></li>
+                <li><a href="#food" data-after="food">Menu</a></li>
+                <li><a href="#contact" data-after="Contact">Contact</a></li>
+                <li><a href="#footer" data-after="footer">Footer</a></li>
+                <li>
+        <div style="color: white; font-size: 20px;" class="simplecart_area">
+          <div class="simplecart_cart">
+            <span class="showCart">
+          <span class="fa fa-shopping-cart"></span>
+            <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+            <span class="dropdown fa fa-chevron-circle-down">
+            <button id="Btn" class="simpleCart_checkout"  >
+              Pay
+              <svg class="svgIcon" viewBox="0 0 576 512"><path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path></svg></button>
+            <div id="cartPopover" style="display:none"></span>
+              <div class="simpleCart_items"></div>
+            </div>
+          </div>
+        </div></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="hero">
+  <div class="hero container">
+<div style="font-size: xx-large;">
+      <h1>Hello, <span></span></h1>
+      <h1>My Name is <span></span></h1>
+      <h1>SELVAN</h1>
+      <a style="font-size: auto; font-size: xx-large;" href="#food" data-after="food" type="button" class="cta">Menu</a>
+    </div>
+  </div>
+</section></header>
+<div  id="food" style="position:absolute; font-size: 17px; align-content: center; align-items: center; position: relative; height: 60px; width: 100%; background-color: grey;font-family:'Trebuchet MS;" class="service-top">
+  <h1 id="food" data-after="food" style="font-family:'Trebuchet MS;font-size: auto; font-size: xx-large;" class="section-title">M<span>EN</span>U</h1>
+</div>
+<div class="momo">
+<div class="content">
+<div  style="background-image:url(l.jpg);  class="site-inner">
+
+  <div style="align-items: center; justify-content: center; display: flex; justify-content: center; width: 100%; height: auto; flex-wrap: wrap;background-color: grey solid 3px;"  class="wrap">
+
+    <div style="display: flex; width: 100%; flex-wrap: wrap;" id="products" class="products">
+
+      <script id="hr-template" type="text/x-handlebars-template">
+        <div style="margin-top: 40px;margin-left: 40px;" class="column one-third">
+          <div class="v">
+          <div style="direction: ltr; display: flex; flex-direction: column; padding: 0px;  background-color:;height: 360px; overflow: hidden; width: 240px;  position: relative; cursor: pointer;border-top-left-radius: 30px ;border-top-right-radius: 30px;"id="item" class="simpleCart_shelfItem item">
+            <div class="item_image"><img style="margin-left: 13px; justify-content: center; width: 218px;height: 218px; border: 2px solid black;" src="{{cells.Image}}"></div>
+            <h2 style="font-size: 25px;margin-left: 4px;"  class="item_name">{{cells.Name}}</h2>
+            <div style="font-size: 13px;margin-left: 4px;"  class="item_description">{{cells.Description}}</div>
+            <div style="margin-top:10px;">
+              <button id="ni" href="javascript:;" class="item_add"><img class="nn" style="width: 46px;height: 46px;;border-radius: 65%;" src="p.jpg"></button>
+              <span style="margin-left: 6px; font-size: 23px; color:red; left: -50px;" class="item_price">${{cells.Price}} </span><s style="color: rgb(125, 124, 124);font-size: 18px;">${{cells.Price}}.99</s>
+            </div>
+          </div></div>
+        </div>
+      </script><br>
+
+    </div>
+
+  </div>
+</div>
+
+    
+<section style="width: 100%; justify-content: center; margin: 0px; padding: 0px; position: relative;" id="contact">
+  <div>
+    <h1 style="font-family: 'Trebuchet MS';background-image:url(l.jpg);border: none;margin: 0;" class="section-title">Contact <span>info</span></h1>
+  </div>
+  <div style="width: 100%; display: flex; flex-wrap: wrap; justify-content: center;background-image: url(l.jpg);padding: 0;margin: 0;">
+    <div class="contact-items" style="background-color: whitesmoke; box-shadow: 2px 2px 30px black;height: 160px; margin: 5px;border-radius: 30px; justify-content: center;align-items: center; position: relative; text-align: center; padding: 0; width: 400px;display: block; flex: 1 0 33%; max-width: 400px;">
+      <div class="contacts-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div><br>
+        <div class="contact-info">
+          <h1>Phone</h1>
+          <a href="tel:+212645145676">
+            <h2 style="color:rgb(15, 89, 199);">+212 6 45 14 56 76</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-items" style="background-color: whitesmoke; box-shadow: 2px 2px 30px black; margin: 5px; border-radius: 30px; height: 160px; justify-content: center;align-items: center; position: relative; text-align: center;display: block; padding: 0; width: 400px; flex: 1 0 33%; max-width: 400px;">
+      <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div><br>
+      <div class="contact-info">
+        <h1>Email</h1>
+        <a href="mailto:soufianesidki20@gmail.com">
+          <h2 style="color:rgb(15, 89, 199);">soufianesidki20@gmail.com</h2>
+        </a>
+      </div>
+    </div>
+    <div class="contact-items" style="background-color: whitesmoke; box-shadow: 2px 2px 30px black; margin: 5px; border-radius: 30px; height: 160px; justify-content: center;align-items: center; position: relative; text-align: center;display: block; padding: 0; width: 32%; flex: 1 0 33%; max-width: 400px;">
+      <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div><br>
+      <div class="contact-info">
+        <h1>Address</h1>
+        <a href="https://www.google.com/search?q=rahma+1+bloc+9&sca_esv=4b3e726407594cc1&sxsrf=ACQVn0_u1bnvwpMmWq_krRnYItii2IRi1A%3A1710241883575&ei=WzjwZZ_cIqy6i-gP2-engAc&ved=0ahUKEwjf9cy_y-6EAxUs3QIHHdvzCXAQ4dUDCBA&uact=5&oq=rahma+1+bloc+9&gs_lp=Egxnd3Mtd2l6LXNlcnAiDnJhaG1hIDEgYmxvYyA5MgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwVI5kZQ0wxY0kNwBngAkAEAmAGfAaABxgOqAQMwLjO4AQPIAQD4AQGYAgigAsQCwgIJEAAYBxgeGLADwgILEAAYBxgeGA8YsAPCAgYQABgWGB7CAggQLhgWGB4YCsICCBAAGBYYHhgPwgICECaYAwCIBgGQBgqSBwM2LjKgB_sL&sclient=gws-wiz-serp&lqi=Cg5yYWhtYSAxIGJsb2MgOVoQIg5yYWhtYSAxIGJsb2MgOZIBDG5laWdoYm9yaG9vZKoBSxABKhIiDnJhaG1hIDEgYmxvYyA5KDYyHxABIhuRtzNQdzkOCQKw79CSHW_14R1whf9yJzXUqNMyEhACIg5yYWhtYSAxIGJsb2MgOQ#rlimm=13120241986732734597">
+          <h2 style="color:rgb(15, 89, 199);">morocco, casablanc, rahma1</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</div></div>
+  <!-- Footer -->
+  <section id="footer" data-after="About">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>SE</span>LVAN</h1>
+      </div>
+      <h2>Please contact us on my contact</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=61553890708434"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/its_soufiane_sidki?igsh=YzljYTk1ODg3Zg=="><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2024 Arfan. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+    <script src="app.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/simpleCart.min.js"></script>
+    <script src="js/handlebars.min.js"></script>
+    <script src="js/sheetrock.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="images.js"></script>
+    <script src="script.js"></script>
+
+  </div>
+
+</body>
+
+</html>
